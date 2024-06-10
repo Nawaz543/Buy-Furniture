@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#page1,#page2{
+    height: 100vh;
+    width: 100vw;
+    /* border: 4px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#page1{
+    background-image: url(Fire.jpg);
+    background-size: cover;
+    background-position: bottom ;
+}
+.news{
+    height: 35vh;
+    width: 30vw;
+    border: 2px solid black;
+    margin-bottom: 3rem;
+}
+#news1{
+    background-image: url(times\ of\ india.jpg);
+    background-size: cover;
+    background-position: left;
+}
+#news2{
+    background-image: url(the\ economistM943.png);
+    background-size: cover;
+    background-position: left;
+}
+#news3{
+    background-image: url(the\ hindu\ 5L.jpg);
+    background-size: cover;
+    background-position: left;
+}
+#news4{
+    background-image: url(studyiqias.jpg);
+    background-size: cover;
+    background-position: left;
+}
+#news5{
+    position: absolute;
+    margin-left: calc(100vw-15vw);
+    background-image: url(dna\ news\ india.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width:495px) {
+    .news{
+        height: 25vh;
+    }
+}
+@media (max-width:412px) {
+    #page1{
+        display: inline-block;
+        height: 200vh;
+    }
+   .news{
+    height: 30vh;
+    width: 50vw;
+    margin-left: 4rem;
+   }
+}
+/* ----------      Page 2       -------------- */
+#page2{
+    background-color: black;
+}
+#head, #value{
+    height: 70vh;
+    width: 40vw;
+    border: 2px solid rgb(99, 96, 96);
+    color: white;
+}
+#head{
+    background-color: rgb(39, 39, 38);
+    font-size: 2.5vw;
+    padding-top: 2vh;
+    padding-left: 3vw;
+    text-align: center;
+    line-height: 15vh;
+    display: flex;
+    align-items: center;
+}
+#head #tree{
+    color: lawngreen;
+    text-shadow: 2px 1px white;
+    text-decoration:white line-through 3px ;
+}
+#head #large,#head #cutted{
+    color: crimson;
+}
+#value{
+    background-color: rgb(39, 39, 38);
+}
+#value h1{
+    text-align: center;
+}
+#box1{
+    height: 40vh;
+    width: 32vw;
+    background-color: black;
+    margin: 4vh 0 0 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.no{
+    height: calc(28vw/4) ;
+    width: calc(28vw/4);
+    background-color: rgb(39, 39, 38);
+    border-radius: 18px;
+    font-size: 3.6vw;
+    text-align: center;
+    padding-top: 1.3vw;
+}
+#box2{
+    height: 20vh;
+    width: 32vw;
+    background-color: black;
+    margin-left: 4vw;
+}
+@media (max-width:840px) {
+    #head,#value{
+        height: 50vh;
+    }
+    #box1,#box2{
+        height: 20vh;
+    }
+}
+@media (max-width:600px) {
+    #head{
+        line-height: 10vh;
+    }
+    #box1,#box2{
+        font-size: 2.5vw;
+    }
+}
+@media (max-width:412px) {
+   #page2{
+        display: inline-block;
+   }
+   #head,#value{
+    height: 40vh;
+    width: 50vw;
+    margin: 3rem;
+    }
+    #head{
+        line-height: 7vh;
+    }
+    #box1{
+        margin-top: 0;
+    }
+    #box1,#box2{
+        height: 15vh;
+        margin-left: 6vw;
+    }
+}
+/* --------------       Page 3      --------------- */
+#page3{
+    height: 100vh;
+    width: 100vw;
+    /* border: 4px solid black; */
+    background-color: black;
+}
+.conc{
+    height: 8vh;
+    width: 70vw;
+    border: 3px solid black;
+    background-color: rgb(39, 39, 38);
+    font-size: 3.5vw;
+    font-weight: 600;
+    color: white;
+}
+ #conc2{
+    transform: rotate(-30deg);
+} 
+#conc2 span{
+    text-decoration:rgb(39, 39, 38) line-through 0.5vw;
+}
+#conc4{
+    transform: rotate(-30deg);
+}
+@media (max-width:560px) {
+    #conc{
+        height: 55vh;
+    }
+}
+@media (max-width:390px) {
+    #conc{
+        height: 45vh;
+    }
+}
