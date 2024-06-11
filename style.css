@@ -104,19 +104,17 @@ button span{
     font-size: 1.1rem;
 }
 @media (max-width:436px) {
+    #form{
+        height: calc(70vh - 3.3rem);
+        width: 85vw;
+    }
     #lable{
-       font-size: 4vw;
+       font-size: 0.7rem;
+       line-height: 1.1rem;
     }
-    form select, form input{
-        font-size: 2.8vw;
-    }
-    #lable p{
-        line-height: 5vw;
-    }
-}
-@media (max-width:356px) {
-    form select, form input{
-        position: absolute;
+     form select, form input{
+        font-size: 0.7rem;
+        padding: 0px;
     }
 }
 /* main body styling -- ENDED */
